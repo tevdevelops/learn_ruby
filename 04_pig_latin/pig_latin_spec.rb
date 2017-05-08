@@ -65,17 +65,14 @@ describe "#translate" do
     expect(s).to eq("ethay ickquay ownbray oxfay")
   end
 
-  #it "translates word with capitals; even multiple words with different capital letters" do
-  #  s = translate("The Fast cool guy")
-  #  expect(s).to eq("Ethay Astfay oolcay uygay")
-  #end
+  it "translates word with capitals; even multiple words with different capital letters" do
+    s = translate("The Fast cool guy")
+    expect(s).to eq("Ethay Astfay oolcay uygay")
+  end
 
-  #it "retains the punctuation at the end of the sentence or in a word" do
-  #  s = translate("You're the coolest!")
-  #  expect(s).to eq("Ou'reyay ethay oolestcay!")
-  #end
-  # Test-driving bonus:
-  # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
-  # * retain the punctuation from the original phrase
+  it "retains the punctuation at the end of the sentence or in a word" do
+    s = translate("You're the coolest!")
+    expect(s).to eq("Ou'reyay ethay oolestcay!")
+  end
 
 end
